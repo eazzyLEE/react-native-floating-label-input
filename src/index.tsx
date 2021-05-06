@@ -732,7 +732,8 @@ const FloatingLabelInput: React.ForwardRefRenderFunction<InputRef, Props> = (
               value={value}
               onSubmitEditing={onSubmitEditing}
               secureTextEntry={
-                isPassword !== undefined ? isPassword && secureText : false
+                secureTextEntry
+//                 isPassword !== undefined ? isPassword && secureText : false
               }
               onFocus={onFocus !== undefined ? onFocus : handleFocus}
               onBlur={onBlur !== undefined ? onBlur : handleBlur}
